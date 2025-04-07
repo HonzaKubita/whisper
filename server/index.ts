@@ -12,7 +12,6 @@ const clients: Client[] = [];
 
 Bun.serve({
   port: 3000,
-  hostname: "0.0.0.0", // Listen on all interfaces
   fetch(req, server) {
     // upgrade the request to a WebSocket
     if (server.upgrade(req)) {
