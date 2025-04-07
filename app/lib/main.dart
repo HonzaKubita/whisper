@@ -29,7 +29,7 @@ void main() async {
   await Hive.openBox<Message>('messages');
   await Hive.openBox<ChatInfo>('chats');
 
-  ConnectionService.initialize('ws://10.9.8.19:3000');
+  ConnectionService.initialize('ws://whisper.apps.qb1t.net/');
   ConnectionService.instance.connect();
 
   runApp(App());
