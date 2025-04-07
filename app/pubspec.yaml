@@ -1,0 +1,55 @@
+name: whisper
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  # Local Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  flutter_secure_storage: ^9.2.4
+
+  # Routing
+  auto_route: ^9.3.0+1
+
+  # Util
+  uuid: ^3.0.6
+  intl: ^0.20.2
+
+  # Cryptography
+  pinenacl: ^0.6.0
+  cryptography: ^2.7.0
+
+  # QR Codes
+  mobile_scanner: ^6.0.7
+  qr_flutter: ^4.1.0
+
+  # Server communication
+  web_socket_channel: ^2.3.0
+
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  auto_route_generator: ^9.0.0
+  hive_generator: ^2.0.1
+
+  build_runner: ^2.4.15
+
+  flutter_launcher_icons: ^0.14.3
+
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon.png"
+  min_sdk_android: 21
